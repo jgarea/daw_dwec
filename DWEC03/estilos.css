@@ -1,0 +1,17 @@
+label {
+  height: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+form input {
+  height: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 200px;
+  margin-left: 20vh;
+}
