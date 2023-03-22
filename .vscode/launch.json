@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\DAW\\Desarrollo web entorno cliente\\DWEC\\DWEC04\\index.html"
+            "file": "d:\\DAW\\Desarrollo web entorno cliente\\DWEC\\boletines\\BOLETINES\\DWEC-Core-JS-Boletin-06\\E02\\index.html"
         }
     ]
 }
