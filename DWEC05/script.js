@@ -35,6 +35,10 @@ function cambiarMayusculas()  {
     this.value = this.value.toUpperCase();
 };
 
+/**
+ * Función que valida los campos
+ * @returns true si es valido los campos
+ */
 const validar = () => {
     let nombreValido = validarNombre();
     let apellidosValidos = validarApellidos();
@@ -50,10 +54,10 @@ const validar = () => {
 }
 
 const validarNombre = () => {
-    let expReg = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
+    let expReg = /^[a-zñáéíóúü' ]+$/i;
     if (!expReg.test(nombre.value)) {
         let contenedor = document.createElement('p');
-        contenedor.innerText = "El nombre es incorrecto";
+        contenedor.innerText = "El nombre es incorrecto debe contener caracteres válidos(a-z,')";
         errores.appendChild(contenedor);
         nombre.focus();
         return false;
@@ -62,10 +66,10 @@ const validarNombre = () => {
 }
 
 const validarApellidos = () => {
-    let expReg = /^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$/;
+    let expReg = /^[a-zñáéíóúü' ]+$/i;
     if (!expReg.test(apellidos.value)) {
         let contenedor = document.createElement('p');
-        contenedor.innerText = "Los apellidos son incorrectos";
+        contenedor.innerText = "Los apellidos son incorrectos debe contener caracteres válidos(a-z,')";
         errores.appendChild(contenedor);
         apellidos.focus();
         return false;
