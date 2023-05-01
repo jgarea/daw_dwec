@@ -53,6 +53,10 @@ const validar = () => {
     return nombreValido && apellidosValidos && edadValida && nifValido && emailValido && provinciaValida && fechaValida && telefonoValido && horaValida;
 }
 
+/**
+ * Función validar un nombre
+ * @returns true si es correcto el nombre
+ */
 const validarNombre = () => {
     let expReg = /^[a-zñáéíóúü' ]+$/i;
     if (!expReg.test(nombre.value)) {
@@ -65,6 +69,10 @@ const validarNombre = () => {
     return true;
 }
 
+/**
+ * Función validar un apellido
+ * @returns true si es correcto el nombre
+ */
 const validarApellidos = () => {
     let expReg = /^[a-zñáéíóúü' ]+$/i;
     if (!expReg.test(apellidos.value)) {
